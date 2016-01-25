@@ -45,6 +45,10 @@ private struct Download {
 extension UIImageView {
     
     func loadImageAtURL(imageURL: String, withDefaultImage defaultImage: UIImage?) {
+        loadImageAtURL(imageURL, withDefaultImage: defaultImage, completion: nil)
+    }
+    
+    func loadImageAtURL(imageURL: String, withDefaultImage defaultImage: UIImage?, completion: (() -> Void)?) {
         if let _defaultImage = defaultImage {
             image = _defaultImage
         }
@@ -53,8 +57,8 @@ extension UIImageView {
             if let _data = data {
                 dispatch_async(dispatch_get_main_queue()) {
                     self.image = nil
-                    self.contentMode = .ScaleAspectFit
                     self.image = UIImage(data: _data)
+                    completion?()
                 }
             }
             DownloadQueue.sharedQeueue().removeDownloadForImageURL(imageURL + "\(self.hash)")
