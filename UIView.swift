@@ -27,8 +27,28 @@ extension UIView {
         self.layer.cornerRadius = (corner / 2);
     }
     
+    func makeRoundWithBorder(width width: CGFloat, color: UIColor) {
+        makeRound()
+        layer.borderWidth = width
+        layer.borderColor = color.CGColor
+    }
+    
     class func loadFromNibNamed(nibNamed: String, bundle : NSBundle? = nil) -> UIView? {
         return UINib(nibName: nibNamed, bundle: bundle).instantiateWithOwner(nil, options: nil).first as? UIView
+    }
+    
+}
+
+protocol UIViewLoading {}
+extension UIView : UIViewLoading {}
+
+extension UIViewLoading where Self : UIView {
+    
+    static func loadFromNib() -> Self {
+        let nibName = "\(self)".characters.split{$0 == "."}.map(String.init).last!
+        let bundle = NSBundle(forClass: Self.self)
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        return nib.instantiateWithOwner(self, options: nil).first as! Self
     }
     
 }
