@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Extensions"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "A slew of Swft Extensions that were built for use in iOS but should also be useful in OS X and tvOS too."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   A slew of Extensions that were built for use in iOS but should also be useful in OS X and tvOS too.
+                   A slew of Swift Extensions that were built for use in iOS but should also be useful in OS X and tvOS too.
                    DESC
 
   s.homepage     = "https://github.com/atljeremy/Extensions"
@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   s.source_files  = "Extensions/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "Extensions/*.h"
+  # s.public_header_files = "Extensions/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
