@@ -39,7 +39,7 @@ public extension String {
     subscript(r: Range<Int>) -> String {
         let start = startIndex.advancedBy(r.startIndex)
         let end = start.advancedBy(r.endIndex - r.startIndex)
-        return self[Range(start: start, end: end)]
+        return self[start..<end]
     }
 }
 
