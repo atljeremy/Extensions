@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A8CD3471D73C19700A502EF /* ExtensionsTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8CD3461D73C19700A502EF /* ExtensionsTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A8CD34E1D73C19700A502EF /* ExtensionsTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8CD3441D73C19700A502EF /* ExtensionsTV.framework */; };
+		1A8CD3531D73C19700A502EF /* ExtensionsTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8CD3521D73C19700A502EF /* ExtensionsTVTests.swift */; };
+		1A8CD35B1D73C1CA00A502EF /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AA1C9D86B6002B0CD8 /* NSDate.swift */; };
+		1A8CD35C1D73C1CA00A502EF /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AB1C9D86B6002B0CD8 /* NSURL.swift */; };
+		1A8CD35D1D73C1CA00A502EF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AC1C9D86B6002B0CD8 /* String.swift */; };
+		1A8CD35E1D73C1CA00A502EF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AD1C9D86B6002B0CD8 /* UIColor.swift */; };
+		1A8CD35F1D73C1CA00A502EF /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AE1C9D86B6002B0CD8 /* UIDevice.swift */; };
+		1A8CD3601D73C1CA00A502EF /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AF1C9D86B6002B0CD8 /* UIImage.swift */; };
+		1A8CD3611D73C1CA00A502EF /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129B01C9D86B6002B0CD8 /* UIImageView.swift */; };
+		1A8CD3621D73C1CA00A502EF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129B11C9D86B6002B0CD8 /* UIView.swift */; };
 		1AA129941C9D8642002B0CD8 /* Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA129931C9D8642002B0CD8 /* Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AA1299B1C9D8642002B0CD8 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA129901C9D8642002B0CD8 /* Extensions.framework */; };
 		1AA129A01C9D8642002B0CD8 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1299F1C9D8642002B0CD8 /* ExtensionsTests.swift */; };
@@ -21,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1A8CD34F1D73C19700A502EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA129871C9D8642002B0CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A8CD3431D73C19700A502EF;
+			remoteInfo = ExtensionsTV;
+		};
 		1AA1299C1C9D8642002B0CD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AA129871C9D8642002B0CD8 /* Project object */;
@@ -31,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A8CD3441D73C19700A502EF /* ExtensionsTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionsTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8CD3461D73C19700A502EF /* ExtensionsTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionsTV.h; sourceTree = "<group>"; };
+		1A8CD3481D73C19700A502EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A8CD34D1D73C19700A502EF /* ExtensionsTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionsTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8CD3521D73C19700A502EF /* ExtensionsTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTVTests.swift; sourceTree = "<group>"; };
+		1A8CD3541D73C19700A502EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA129901C9D8642002B0CD8 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA129931C9D8642002B0CD8 /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
 		1AA129951C9D8642002B0CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +72,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1A8CD3401D73C19700A502EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A8CD34A1D73C19700A502EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8CD34E1D73C19700A502EF /* ExtensionsTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AA1298C1C9D8642002B0CD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,11 +105,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A8CD3451D73C19700A502EF /* ExtensionsTV */ = {
+			isa = PBXGroup;
+			children = (
+				1A8CD3461D73C19700A502EF /* ExtensionsTV.h */,
+				1A8CD3481D73C19700A502EF /* Info.plist */,
+			);
+			path = ExtensionsTV;
+			sourceTree = "<group>";
+		};
+		1A8CD3511D73C19700A502EF /* ExtensionsTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A8CD3521D73C19700A502EF /* ExtensionsTVTests.swift */,
+				1A8CD3541D73C19700A502EF /* Info.plist */,
+			);
+			path = ExtensionsTVTests;
+			sourceTree = "<group>";
+		};
 		1AA129861C9D8642002B0CD8 = {
 			isa = PBXGroup;
 			children = (
 				1AA129921C9D8642002B0CD8 /* Extensions */,
 				1AA1299E1C9D8642002B0CD8 /* ExtensionsTests */,
+				1A8CD3451D73C19700A502EF /* ExtensionsTV */,
+				1A8CD3511D73C19700A502EF /* ExtensionsTVTests */,
 				1AA129911C9D8642002B0CD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +139,8 @@
 			children = (
 				1AA129901C9D8642002B0CD8 /* Extensions.framework */,
 				1AA1299A1C9D8642002B0CD8 /* ExtensionsTests.xctest */,
+				1A8CD3441D73C19700A502EF /* ExtensionsTV.framework */,
+				1A8CD34D1D73C19700A502EF /* ExtensionsTVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +174,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1A8CD3411D73C19700A502EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8CD3471D73C19700A502EF /* ExtensionsTV.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AA1298D1C9D8642002B0CD8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,6 +193,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1A8CD3431D73C19700A502EF /* ExtensionsTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A8CD3591D73C19700A502EF /* Build configuration list for PBXNativeTarget "ExtensionsTV" */;
+			buildPhases = (
+				1A8CD33F1D73C19700A502EF /* Sources */,
+				1A8CD3401D73C19700A502EF /* Frameworks */,
+				1A8CD3411D73C19700A502EF /* Headers */,
+				1A8CD3421D73C19700A502EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtensionsTV;
+			productName = ExtensionsTV;
+			productReference = 1A8CD3441D73C19700A502EF /* ExtensionsTV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1A8CD34C1D73C19700A502EF /* ExtensionsTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A8CD35A1D73C19700A502EF /* Build configuration list for PBXNativeTarget "ExtensionsTVTests" */;
+			buildPhases = (
+				1A8CD3491D73C19700A502EF /* Sources */,
+				1A8CD34A1D73C19700A502EF /* Frameworks */,
+				1A8CD34B1D73C19700A502EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A8CD3501D73C19700A502EF /* PBXTargetDependency */,
+			);
+			name = ExtensionsTVTests;
+			productName = ExtensionsTVTests;
+			productReference = 1A8CD34D1D73C19700A502EF /* ExtensionsTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1AA1298F1C9D8642002B0CD8 /* Extensions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AA129A41C9D8642002B0CD8 /* Build configuration list for PBXNativeTarget "Extensions" */;
@@ -166,10 +271,16 @@
 		1AA129871C9D8642002B0CD8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jeremy Fox";
 				TargetAttributes = {
+					1A8CD3431D73C19700A502EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1A8CD34C1D73C19700A502EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					1AA1298F1C9D8642002B0CD8 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -192,11 +303,27 @@
 			targets = (
 				1AA1298F1C9D8642002B0CD8 /* Extensions */,
 				1AA129991C9D8642002B0CD8 /* ExtensionsTests */,
+				1A8CD3431D73C19700A502EF /* ExtensionsTV */,
+				1A8CD34C1D73C19700A502EF /* ExtensionsTVTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1A8CD3421D73C19700A502EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A8CD34B1D73C19700A502EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AA1298E1C9D8642002B0CD8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +341,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1A8CD33F1D73C19700A502EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8CD3621D73C1CA00A502EF /* UIView.swift in Sources */,
+				1A8CD35F1D73C1CA00A502EF /* UIDevice.swift in Sources */,
+				1A8CD35D1D73C1CA00A502EF /* String.swift in Sources */,
+				1A8CD3611D73C1CA00A502EF /* UIImageView.swift in Sources */,
+				1A8CD35E1D73C1CA00A502EF /* UIColor.swift in Sources */,
+				1A8CD3601D73C1CA00A502EF /* UIImage.swift in Sources */,
+				1A8CD35C1D73C1CA00A502EF /* NSURL.swift in Sources */,
+				1A8CD35B1D73C1CA00A502EF /* NSDate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A8CD3491D73C19700A502EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8CD3531D73C19700A502EF /* ExtensionsTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AA1298B1C9D8642002B0CD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +390,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1A8CD3501D73C19700A502EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A8CD3431D73C19700A502EF /* ExtensionsTV */;
+			targetProxy = 1A8CD34F1D73C19700A502EF /* PBXContainerItemProxy */;
+		};
 		1AA1299D1C9D8642002B0CD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1AA1298F1C9D8642002B0CD8 /* Extensions */;
@@ -248,6 +403,72 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1A8CD3551D73C19700A502EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ExtensionsTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremyfox.ExtensionsTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		1A8CD3561D73C19700A502EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ExtensionsTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremyfox.ExtensionsTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		1A8CD3571D73C19700A502EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = ExtensionsTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremyfox.ExtensionsTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		1A8CD3581D73C19700A502EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = ExtensionsTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremyfox.ExtensionsTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
 		1AA129A21C9D8642002B0CD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -397,6 +618,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A8CD3591D73C19700A502EF /* Build configuration list for PBXNativeTarget "ExtensionsTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A8CD3551D73C19700A502EF /* Debug */,
+				1A8CD3561D73C19700A502EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A8CD35A1D73C19700A502EF /* Build configuration list for PBXNativeTarget "ExtensionsTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A8CD3571D73C19700A502EF /* Debug */,
+				1A8CD3581D73C19700A502EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1AA1298A1C9D8642002B0CD8 /* Build configuration list for PBXProject "Extensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
