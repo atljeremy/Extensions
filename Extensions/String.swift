@@ -24,12 +24,12 @@
 */
 
 public extension String {
-    public func contains(string: String) -> Bool {
-        return rangeOfString(string) != nil
+    public func contains(_ string: String) -> Bool {
+        return range(of: string) != nil
     }
     
     subscript(i: Int) -> Character {
-        return self[self.startIndex.advancedBy(i)]
+        return self[self.characters.index(self.startIndex, offsetBy: i)]
     }
     
     subscript(i: Int) -> String {
@@ -37,29 +37,29 @@ public extension String {
     }
     
     subscript(r: Range<Int>) -> String {
-        let start = startIndex.advancedBy(r.startIndex)
-        let end = start.advancedBy(r.endIndex - r.startIndex)
+        let start = characters.index(startIndex, offsetBy: r.lowerBound)
+        let end = characters.index(start, offsetBy: r.upperBound - r.lowerBound)
         return self[start..<end]
     }
 }
 
 public extension Optional {
-    public func contains(string: String) -> Bool {
+    public func contains(_ string: String) -> Bool {
         switch self {
-        case .None:
+        case .none:
             return false
-        case let .Some(value):
+        case let .some(value):
             if value is Int {
-                return "\((value as! Int))".rangeOfString(string) != nil
+                return "\((value as! Int))".range(of: string) != nil
             } else if value is String {
-                return (value as! String).rangeOfString(string) != nil
+                return (value as! String).range(of: string) != nil
             }
         }
         
         return false
     }
     
-    public func contains(int: Int) -> Bool {
+    public func contains(_ int: Int) -> Bool {
         return contains("\(int)")
     }
 }

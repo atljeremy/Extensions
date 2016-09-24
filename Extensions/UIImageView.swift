@@ -26,9 +26,9 @@ import UIKit
 
 private class DownloadQueue {
     
-    private var queue = [String: Download]()
+    fileprivate var queue = [String: Download]()
 
-    private class var _sharedQeueue: DownloadQueue {
+    fileprivate class var _sharedQeueue: DownloadQueue {
         struct Static {
             static let instance = DownloadQueue()
         }
@@ -39,51 +39,51 @@ private class DownloadQueue {
         return _sharedQeueue
     }
     
-    func enqueue(download: Download, forImageURL imageURL: String) {
+    func enqueue(_ download: Download, forImageURL imageURL: String) {
         queue[imageURL] = download
     }
     
-    func removeDownloadForImageURL(imageURL: String) {
+    func removeDownloadForImageURL(_ imageURL: String) {
         if let _imageURL = imageURL as String? {
-            queue.removeValueForKey(_imageURL)
+            queue.removeValue(forKey: _imageURL)
         }
     }
     
-    func downloadForImageURL(imageURL: String) -> Download? {
+    func downloadForImageURL(_ imageURL: String) -> Download? {
         return queue[imageURL]
     }
 }
 
 private struct Download {
-    var task: NSURLSessionDataTask?
+    var task: URLSessionDataTask?
 }
 
 public extension UIImageView {
     
-    public func loadImageAtURL(imageURL: String, withDefaultImage defaultImage: UIImage?) {
+    public func loadImageAtURL(_ imageURL: String, withDefaultImage defaultImage: UIImage?) {
         loadImageAtURL(imageURL, withDefaultImage: defaultImage, completion: nil)
     }
     
-    public func loadImageAtURL(imageURL: String, withDefaultImage defaultImage: UIImage?, completion: (() -> Void)?) {
+    public func loadImageAtURL(_ imageURL: String, withDefaultImage defaultImage: UIImage?, completion: (() -> Void)?) {
         if let _defaultImage = defaultImage {
             image = _defaultImage
         }
-        let request = NSURLRequest(URL: NSURL(string: imageURL)!)
-        let downloadTask = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+        let request = URLRequest(url: URL(string: imageURL)!)
+        let downloadTask = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
             if let _data = data {
-                dispatch_async(dispatch_get_main_queue()) {
+                DispatchQueue.main.async {
                     self.image = nil
                     self.image = UIImage(data: _data)
                     completion?()
                 }
             }
             DownloadQueue.sharedQeueue().removeDownloadForImageURL(imageURL + "\(self.hash)")
-        }
+        }) 
         DownloadQueue.sharedQeueue().enqueue(Download(task: downloadTask), forImageURL: imageURL + "\(hash)")
         downloadTask.resume()
     }
     
-    public func cancelImageLoadForImageURL(imageURL: String) {
+    public func cancelImageLoadForImageURL(_ imageURL: String) {
         if let _download = DownloadQueue.sharedQeueue().downloadForImageURL(imageURL + "\(hash)") {
             _download.task?.cancel()
         }

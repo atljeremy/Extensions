@@ -33,7 +33,7 @@ import UIKit
 
 public extension UIColor {
     
-    public class func hsb(h: CGFloat, _ s: CGFloat, _ b: CGFloat) -> UIColor {
+    public class func hsb(_ h: CGFloat, _ s: CGFloat, _ b: CGFloat) -> UIColor {
         return UIColor(hue: h, saturation: s, brightness: b, alpha: 1.0)
     }
     
