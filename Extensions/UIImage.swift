@@ -41,10 +41,13 @@ public extension UIImage {
     }
     
     public func imageByCroppingToRect(rect: CGRect) -> UIImage? {
-        if let image = CGImageCreateWithImageInRect(self.CGImage, rect) {
-            return UIImage(CGImage: image)
-        } else if let image = (self.CIImage)?.imageByCroppingToRect(rect) {
-            return UIImage(CIImage: image)
+        guard let _cgImage = cgImage else {
+            return nil
+        }
+        if let image = _cgImage.cropping(to: rect) {
+            return UIImage(cgImage: image)
+        } else if let image = (self.ciImage)?.cropping(to: rect) {
+            return UIImage(ciImage: image)
         }
         
         return nil
