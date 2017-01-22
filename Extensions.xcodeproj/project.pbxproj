@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19526F821E3431E000E79A0E /* Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 19526F781E3431E000E79A0E /* Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19526F841E3431E000E79A0E /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7A1E3431E000E79A0E /* NSDate.swift */; };
+		19526F851E3431E000E79A0E /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7B1E3431E000E79A0E /* NSURL.swift */; };
+		19526F861E3431E000E79A0E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7C1E3431E000E79A0E /* String.swift */; };
+		19526F871E3431E000E79A0E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7D1E3431E000E79A0E /* UIColor.swift */; };
+		19526F881E3431E000E79A0E /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7E1E3431E000E79A0E /* UIDevice.swift */; };
+		19526F891E3431E000E79A0E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7F1E3431E000E79A0E /* UIImage.swift */; };
+		19526F8A1E3431E000E79A0E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F801E3431E000E79A0E /* UIImageView.swift */; };
+		19526F8B1E3431E000E79A0E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F811E3431E000E79A0E /* UIView.swift */; };
+		19526F8C1E34326400E79A0E /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7A1E3431E000E79A0E /* NSDate.swift */; };
+		19526F8D1E34326400E79A0E /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7B1E3431E000E79A0E /* NSURL.swift */; };
+		19526F8E1E34326400E79A0E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7C1E3431E000E79A0E /* String.swift */; };
+		19526F8F1E34326400E79A0E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7D1E3431E000E79A0E /* UIColor.swift */; };
+		19526F901E34326400E79A0E /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7E1E3431E000E79A0E /* UIDevice.swift */; };
+		19526F911E34326400E79A0E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7F1E3431E000E79A0E /* UIImage.swift */; };
+		19526F921E34326400E79A0E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F801E3431E000E79A0E /* UIImageView.swift */; };
+		19526F931E34326400E79A0E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F811E3431E000E79A0E /* UIView.swift */; };
 		1A8CD3471D73C19700A502EF /* ExtensionsTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8CD3461D73C19700A502EF /* ExtensionsTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A8CD34E1D73C19700A502EF /* ExtensionsTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8CD3441D73C19700A502EF /* ExtensionsTV.framework */; };
 		1A8CD3531D73C19700A502EF /* ExtensionsTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8CD3521D73C19700A502EF /* ExtensionsTVTests.swift */; };
-		1A8CD35B1D73C1CA00A502EF /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AA1C9D86B6002B0CD8 /* NSDate.swift */; };
-		1A8CD35C1D73C1CA00A502EF /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AB1C9D86B6002B0CD8 /* NSURL.swift */; };
-		1A8CD35D1D73C1CA00A502EF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AC1C9D86B6002B0CD8 /* String.swift */; };
-		1A8CD35E1D73C1CA00A502EF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AD1C9D86B6002B0CD8 /* UIColor.swift */; };
-		1A8CD35F1D73C1CA00A502EF /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AE1C9D86B6002B0CD8 /* UIDevice.swift */; };
-		1A8CD3601D73C1CA00A502EF /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AF1C9D86B6002B0CD8 /* UIImage.swift */; };
-		1A8CD3611D73C1CA00A502EF /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129B01C9D86B6002B0CD8 /* UIImageView.swift */; };
-		1A8CD3621D73C1CA00A502EF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129B11C9D86B6002B0CD8 /* UIView.swift */; };
-		1AA129941C9D8642002B0CD8 /* Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA129931C9D8642002B0CD8 /* Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AA1299B1C9D8642002B0CD8 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA129901C9D8642002B0CD8 /* Extensions.framework */; };
 		1AA129A01C9D8642002B0CD8 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1299F1C9D8642002B0CD8 /* ExtensionsTests.swift */; };
-		1AA129B21C9D86B6002B0CD8 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AA1C9D86B6002B0CD8 /* NSDate.swift */; };
-		1AA129B31C9D86B6002B0CD8 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AB1C9D86B6002B0CD8 /* NSURL.swift */; };
-		1AA129B41C9D86B6002B0CD8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AC1C9D86B6002B0CD8 /* String.swift */; };
-		1AA129B51C9D86B6002B0CD8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AD1C9D86B6002B0CD8 /* UIColor.swift */; };
-		1AA129B61C9D86B6002B0CD8 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AE1C9D86B6002B0CD8 /* UIDevice.swift */; };
-		1AA129B71C9D86B6002B0CD8 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129AF1C9D86B6002B0CD8 /* UIImage.swift */; };
-		1AA129B81C9D86B6002B0CD8 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129B01C9D86B6002B0CD8 /* UIImageView.swift */; };
-		1AA129B91C9D86B6002B0CD8 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA129B11C9D86B6002B0CD8 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19526F781E3431E000E79A0E /* Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
+		19526F791E3431E000E79A0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19526F7A1E3431E000E79A0E /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		19526F7B1E3431E000E79A0E /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
+		19526F7C1E3431E000E79A0E /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		19526F7D1E3431E000E79A0E /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		19526F7E1E3431E000E79A0E /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		19526F7F1E3431E000E79A0E /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		19526F801E3431E000E79A0E /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		19526F811E3431E000E79A0E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		1A8CD3441D73C19700A502EF /* ExtensionsTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionsTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8CD3461D73C19700A502EF /* ExtensionsTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionsTV.h; sourceTree = "<group>"; };
 		1A8CD3481D73C19700A502EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,19 +66,9 @@
 		1A8CD3521D73C19700A502EF /* ExtensionsTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTVTests.swift; sourceTree = "<group>"; };
 		1A8CD3541D73C19700A502EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA129901C9D8642002B0CD8 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AA129931C9D8642002B0CD8 /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
-		1AA129951C9D8642002B0CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA1299A1C9D8642002B0CD8 /* ExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA1299F1C9D8642002B0CD8 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		1AA129A11C9D8642002B0CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AA129AA1C9D86B6002B0CD8 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
-		1AA129AB1C9D86B6002B0CD8 /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
-		1AA129AC1C9D86B6002B0CD8 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		1AA129AD1C9D86B6002B0CD8 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		1AA129AE1C9D86B6002B0CD8 /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
-		1AA129AF1C9D86B6002B0CD8 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		1AA129B01C9D86B6002B0CD8 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		1AA129B11C9D86B6002B0CD8 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +105,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19526F771E3431E000E79A0E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				19526F781E3431E000E79A0E /* Extensions.h */,
+				19526F791E3431E000E79A0E /* Info.plist */,
+				19526F7A1E3431E000E79A0E /* NSDate.swift */,
+				19526F7B1E3431E000E79A0E /* NSURL.swift */,
+				19526F7C1E3431E000E79A0E /* String.swift */,
+				19526F7D1E3431E000E79A0E /* UIColor.swift */,
+				19526F7E1E3431E000E79A0E /* UIDevice.swift */,
+				19526F7F1E3431E000E79A0E /* UIImage.swift */,
+				19526F801E3431E000E79A0E /* UIImageView.swift */,
+				19526F811E3431E000E79A0E /* UIView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		1A8CD3451D73C19700A502EF /* ExtensionsTV */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +143,7 @@
 		1AA129861C9D8642002B0CD8 = {
 			isa = PBXGroup;
 			children = (
-				1AA129921C9D8642002B0CD8 /* Extensions */,
+				19526F771E3431E000E79A0E /* Sources */,
 				1AA1299E1C9D8642002B0CD8 /* ExtensionsTests */,
 				1A8CD3451D73C19700A502EF /* ExtensionsTV */,
 				1A8CD3511D73C19700A502EF /* ExtensionsTVTests */,
@@ -143,23 +160,6 @@
 				1A8CD34D1D73C19700A502EF /* ExtensionsTVTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1AA129921C9D8642002B0CD8 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1AA129AA1C9D86B6002B0CD8 /* NSDate.swift */,
-				1AA129AB1C9D86B6002B0CD8 /* NSURL.swift */,
-				1AA129AC1C9D86B6002B0CD8 /* String.swift */,
-				1AA129AD1C9D86B6002B0CD8 /* UIColor.swift */,
-				1AA129AE1C9D86B6002B0CD8 /* UIDevice.swift */,
-				1AA129AF1C9D86B6002B0CD8 /* UIImage.swift */,
-				1AA129B01C9D86B6002B0CD8 /* UIImageView.swift */,
-				1AA129B11C9D86B6002B0CD8 /* UIView.swift */,
-				1AA129931C9D8642002B0CD8 /* Extensions.h */,
-				1AA129951C9D8642002B0CD8 /* Info.plist */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1AA1299E1C9D8642002B0CD8 /* ExtensionsTests */ = {
@@ -186,7 +186,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AA129941C9D8642002B0CD8 /* Extensions.h in Headers */,
+				19526F821E3431E000E79A0E /* Extensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,14 +347,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A8CD3621D73C1CA00A502EF /* UIView.swift in Sources */,
-				1A8CD35F1D73C1CA00A502EF /* UIDevice.swift in Sources */,
-				1A8CD35D1D73C1CA00A502EF /* String.swift in Sources */,
-				1A8CD3611D73C1CA00A502EF /* UIImageView.swift in Sources */,
-				1A8CD35E1D73C1CA00A502EF /* UIColor.swift in Sources */,
-				1A8CD3601D73C1CA00A502EF /* UIImage.swift in Sources */,
-				1A8CD35C1D73C1CA00A502EF /* NSURL.swift in Sources */,
-				1A8CD35B1D73C1CA00A502EF /* NSDate.swift in Sources */,
+				19526F8C1E34326400E79A0E /* NSDate.swift in Sources */,
+				19526F8D1E34326400E79A0E /* NSURL.swift in Sources */,
+				19526F8E1E34326400E79A0E /* String.swift in Sources */,
+				19526F8F1E34326400E79A0E /* UIColor.swift in Sources */,
+				19526F901E34326400E79A0E /* UIDevice.swift in Sources */,
+				19526F911E34326400E79A0E /* UIImage.swift in Sources */,
+				19526F921E34326400E79A0E /* UIImageView.swift in Sources */,
+				19526F931E34326400E79A0E /* UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,14 +370,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AA129B91C9D86B6002B0CD8 /* UIView.swift in Sources */,
-				1AA129B61C9D86B6002B0CD8 /* UIDevice.swift in Sources */,
-				1AA129B41C9D86B6002B0CD8 /* String.swift in Sources */,
-				1AA129B81C9D86B6002B0CD8 /* UIImageView.swift in Sources */,
-				1AA129B51C9D86B6002B0CD8 /* UIColor.swift in Sources */,
-				1AA129B71C9D86B6002B0CD8 /* UIImage.swift in Sources */,
-				1AA129B31C9D86B6002B0CD8 /* NSURL.swift in Sources */,
-				1AA129B21C9D86B6002B0CD8 /* NSDate.swift in Sources */,
+				19526F8B1E3431E000E79A0E /* UIView.swift in Sources */,
+				19526F881E3431E000E79A0E /* UIDevice.swift in Sources */,
+				19526F861E3431E000E79A0E /* String.swift in Sources */,
+				19526F8A1E3431E000E79A0E /* UIImageView.swift in Sources */,
+				19526F871E3431E000E79A0E /* UIColor.swift in Sources */,
+				19526F891E3431E000E79A0E /* UIImage.swift in Sources */,
+				19526F851E3431E000E79A0E /* NSURL.swift in Sources */,
+				19526F841E3431E000E79A0E /* NSDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +452,7 @@
 		1A8CD3571D73C19700A502EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				INFOPLIST_FILE = ExtensionsTVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -465,6 +466,7 @@
 		1A8CD3581D73C19700A502EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				INFOPLIST_FILE = ExtensionsTVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -581,7 +583,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Extensions/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -603,7 +605,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Extensions/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -617,6 +619,7 @@
 		1AA129A81C9D8642002B0CD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeremyfox.ExtensionsTests;
@@ -628,6 +631,7 @@
 		1AA129A91C9D8642002B0CD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeremyfox.ExtensionsTests;
