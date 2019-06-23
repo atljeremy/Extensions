@@ -35,41 +35,41 @@ public extension Date {
             }()
     }
     
-    public func toRFC3339String() -> String {
+    func toRFC3339String() -> String {
         let formatter = Static.formatter
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.S'Z'"
         return formatter.string(from: self)
     }
     
-    public static func dateFromRFC3339String(_ string: String) -> Date? {
+    static func dateFromRFC3339String(_ string: String) -> Date? {
         return dateFromString(string, withFormat: "yyyy-MM-dd'T'HH:mm:ss.S'Z'")
     }
     
-    public func toPrettyString() -> String {
+    func toPrettyString() -> String {
         let formatter = Static.formatter
         formatter.dateFormat = "E MMM dd, yyyy 'at' h:mm a"
         return formatter.string(from: self)
     }
     
-    public func toShortPrettyString() -> String {
+    func toShortPrettyString() -> String {
         let formatter = Static.formatter
         formatter.dateFormat = "MM/dd/yy"
         return formatter.string(from: self)
     }
     
-    public static func dateFromString(_ dateString: String, withFormat format: String) -> Date? {
+    static func dateFromString(_ dateString: String, withFormat format: String) -> Date? {
         let formatter = Static.formatter
         formatter.dateFormat = format
         return formatter.date(from: dateString)
     }
     
-    public func beginningOfDay() -> Date {
+    func beginningOfDay() -> Date {
         let calendar = Calendar.current
         let components = (calendar as NSCalendar).components([.year, .month, .day], from: self)
         return calendar.date(from: components)!
     }
     
-    public func endOfDay() -> Date {
+    func endOfDay() -> Date {
         var components = DateComponents()
         components.day = 1
         var date = (Calendar.current as NSCalendar).date(byAdding: components, to: self.beginningOfDay(), options: [])!

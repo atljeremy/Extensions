@@ -26,47 +26,47 @@
 import UIKit
 
 public extension UIDevice {
-    public static func IS_568_SCREEN() -> Bool {
+    static func is568Screen() -> Bool {
         return UIScreen.main.bounds.size.height == 568
     }
     
-    public static func IS_IPHONE() -> Bool {
+    static func isiPhone() -> Bool {
         return (UIDevice.current.model as NSString).range(of: "iPhone").location != NSNotFound
     }
     
-    public static func IS_IPOD() -> Bool {
+    static func isiPod() -> Bool {
         return ((UIDevice.current.model as NSString).range(of: "iPod").location != NSNotFound)
     }
     
-    public static func IS_IPAD() -> Bool {
+    static func isiPad() -> Bool {
         return ((UIDevice.current.model as NSString).range(of: "iPad").location != NSNotFound)
     }
     
-    public static func IS_IOS7_OR_GREATER() -> Bool {
-        return SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO("7")
+    static func isiOS7OrGreater() -> Bool {
+        return isSystemVersionsGreaterThanOrEqualTo("7")
     }
     
-    public static func IS_IOS8_OR_GREATER() -> Bool {
-        return SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO("8")
+    static func isiOS8OrGreater() -> Bool {
+        return isSystemVersionsGreaterThanOrEqualTo("8")
     }
     
-    public static func SYSTEM_VERSION_EQUAL_TO(_ v: String) -> Bool {
+    static func isSystemVersionEqualTo(_ v: String) -> Bool {
         return UIDevice.current.systemVersion.compare(v, options: .numeric, range: nil, locale: nil) == .orderedSame
     }
     
-    public static func SYSTEM_VERSION_GREATER_THAN(_ v: String) -> Bool {
+    static func isSystemVersionGreaterThan(_ v: String) -> Bool {
         return UIDevice.current.systemVersion.compare(v, options: .numeric, range: nil, locale: nil) == .orderedDescending
     }
     
-    public static func SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(_ v: String) -> Bool {
+    static func isSystemVersionsGreaterThanOrEqualTo(_ v: String) -> Bool {
         return UIDevice.current.systemVersion.compare(v, options: .numeric, range: nil, locale: nil) != .orderedAscending
     }
     
-    public static func SYSTEM_VERSION_LESS_THAN(_ v: String) -> Bool {
+    static func isSystemVersionLessThan(_ v: String) -> Bool {
         return UIDevice.current.systemVersion.compare(v, options: .numeric, range: nil, locale: nil) == .orderedAscending
     }
     
-    public static func SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(_ v: String) -> Bool {
+    static func isSystemVersionLessThenOrEqualTo(_ v: String) -> Bool {
         return UIDevice.current.systemVersion.compare(v, options: .numeric, range: nil, locale: nil) != .orderedDescending
     }
 }

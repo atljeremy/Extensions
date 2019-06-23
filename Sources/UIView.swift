@@ -27,7 +27,7 @@ import UIKit
 
 public extension UIView {
     
-    public func makeRound() {
+    func makeRound() {
         self.contentMode = .scaleAspectFill;
         self.clipsToBounds = true;
         var f = self.frame;
@@ -44,13 +44,13 @@ public extension UIView {
         self.layer.cornerRadius = (corner / 2);
     }
     
-    public func makeRoundWithBorder(width: CGFloat, color: UIColor) {
+    func makeRoundWithBorder(width: CGFloat, color: UIColor) {
         makeRound()
         layer.borderWidth = width
         layer.borderColor = color.cgColor
     }
     
-    public class func loadFromNibNamed(_ nibNamed: String, bundle : Bundle? = nil) -> UIView? {
+    class func loadFromNibNamed(_ nibNamed: String, bundle : Bundle? = nil) -> UIView? {
         return UINib(nibName: nibNamed, bundle: bundle).instantiate(withOwner: nil, options: nil).first as? UIView
     }
     
@@ -60,8 +60,8 @@ public protocol UIViewLoading {}
 extension UIView : UIViewLoading {}
 public extension UIViewLoading where Self : UIView {
     
-    public static func loadFromNib() -> Self {
-        let nibName = "\(self)".characters.split{$0 == "."}.map(String.init).last!
+    static func loadFromNib() -> Self {
+        let nibName = "\(self)".split{$0 == "."}.map(String.init).last!
         let bundle = Bundle(for: Self.self)
         let nib = UINib(nibName: nibName, bundle: bundle)
         return nib.instantiate(withOwner: self, options: nil).first as! Self
