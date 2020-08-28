@@ -32,11 +32,11 @@ public extension String {
         return String(self[i] as Character)
     }
     
-//    subscript(r: Range<Int>) -> String {
-//        let start = index(startIndex, offsetBy: r.lowerBound)
-//        let end = index(start, offsetBy: r.upperBound - r.lowerBound)
-//        return [start..<end]
-//    }
+    subscript(r: Range<Int>) -> String {
+        let start = index(startIndex, offsetBy: r.lowerBound)
+        let end = index(start, offsetBy: r.upperBound - r.lowerBound)
+        return String(self[start..<end])
+    }
 }
 
 public extension Optional {

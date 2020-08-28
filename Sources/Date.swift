@@ -27,16 +27,14 @@ import Foundation
 
 public extension Date {
     
-    fileprivate struct Static {
-        static var formatter: DateFormatter = {
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.S'Z'"
-            return formatter
-            }()
-    }
+   static var formatter: DateFormatter = {
+       let formatter = DateFormatter()
+       formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.S'Z'"
+       return formatter
+   }()
     
     func toRFC3339String() -> String {
-        let formatter = Static.formatter
+        let formatter = Date.formatter
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.S'Z'"
         return formatter.string(from: self)
     }
@@ -46,19 +44,19 @@ public extension Date {
     }
     
     func toPrettyString() -> String {
-        let formatter = Static.formatter
+        let formatter = Date.formatter
         formatter.dateFormat = "E MMM dd, yyyy 'at' h:mm a"
         return formatter.string(from: self)
     }
     
     func toShortPrettyString() -> String {
-        let formatter = Static.formatter
+        let formatter = Date.formatter
         formatter.dateFormat = "MM/dd/yy"
         return formatter.string(from: self)
     }
     
     static func dateFromString(_ dateString: String, withFormat format: String) -> Date? {
-        let formatter = Static.formatter
+        let formatter = Date.formatter
         formatter.dateFormat = format
         return formatter.date(from: dateString)
     }
