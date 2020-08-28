@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		19526F821E3431E000E79A0E /* Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 19526F781E3431E000E79A0E /* Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19526F841E3431E000E79A0E /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7A1E3431E000E79A0E /* NSDate.swift */; };
-		19526F851E3431E000E79A0E /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7B1E3431E000E79A0E /* NSURL.swift */; };
+		19526F841E3431E000E79A0E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7A1E3431E000E79A0E /* Date.swift */; };
+		19526F851E3431E000E79A0E /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7B1E3431E000E79A0E /* URL.swift */; };
 		19526F861E3431E000E79A0E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7C1E3431E000E79A0E /* String.swift */; };
 		19526F871E3431E000E79A0E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7D1E3431E000E79A0E /* UIColor.swift */; };
 		19526F881E3431E000E79A0E /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7E1E3431E000E79A0E /* UIDevice.swift */; };
 		19526F891E3431E000E79A0E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7F1E3431E000E79A0E /* UIImage.swift */; };
 		19526F8A1E3431E000E79A0E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F801E3431E000E79A0E /* UIImageView.swift */; };
 		19526F8B1E3431E000E79A0E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F811E3431E000E79A0E /* UIView.swift */; };
-		19526F8C1E34326400E79A0E /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7A1E3431E000E79A0E /* NSDate.swift */; };
-		19526F8D1E34326400E79A0E /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7B1E3431E000E79A0E /* NSURL.swift */; };
+		19526F8C1E34326400E79A0E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7A1E3431E000E79A0E /* Date.swift */; };
+		19526F8D1E34326400E79A0E /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7B1E3431E000E79A0E /* URL.swift */; };
 		19526F8E1E34326400E79A0E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7C1E3431E000E79A0E /* String.swift */; };
 		19526F8F1E34326400E79A0E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7D1E3431E000E79A0E /* UIColor.swift */; };
 		19526F901E34326400E79A0E /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19526F7E1E3431E000E79A0E /* UIDevice.swift */; };
@@ -51,8 +51,8 @@
 /* Begin PBXFileReference section */
 		19526F781E3431E000E79A0E /* Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
 		19526F791E3431E000E79A0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19526F7A1E3431E000E79A0E /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
-		19526F7B1E3431E000E79A0E /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
+		19526F7A1E3431E000E79A0E /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		19526F7B1E3431E000E79A0E /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		19526F7C1E3431E000E79A0E /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		19526F7D1E3431E000E79A0E /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		19526F7E1E3431E000E79A0E /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 			children = (
 				19526F781E3431E000E79A0E /* Extensions.h */,
 				19526F791E3431E000E79A0E /* Info.plist */,
-				19526F7A1E3431E000E79A0E /* NSDate.swift */,
-				19526F7B1E3431E000E79A0E /* NSURL.swift */,
+				19526F7A1E3431E000E79A0E /* Date.swift */,
+				19526F7B1E3431E000E79A0E /* URL.swift */,
 				19526F7C1E3431E000E79A0E /* String.swift */,
 				19526F7D1E3431E000E79A0E /* UIColor.swift */,
 				19526F7E1E3431E000E79A0E /* UIDevice.swift */,
@@ -348,8 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19526F8C1E34326400E79A0E /* NSDate.swift in Sources */,
-				19526F8D1E34326400E79A0E /* NSURL.swift in Sources */,
+				19526F8C1E34326400E79A0E /* Date.swift in Sources */,
+				19526F8D1E34326400E79A0E /* URL.swift in Sources */,
 				19526F8E1E34326400E79A0E /* String.swift in Sources */,
 				19526F8F1E34326400E79A0E /* UIColor.swift in Sources */,
 				19526F901E34326400E79A0E /* UIDevice.swift in Sources */,
@@ -377,8 +377,8 @@
 				19526F8A1E3431E000E79A0E /* UIImageView.swift in Sources */,
 				19526F871E3431E000E79A0E /* UIColor.swift in Sources */,
 				19526F891E3431E000E79A0E /* UIImage.swift in Sources */,
-				19526F851E3431E000E79A0E /* NSURL.swift in Sources */,
-				19526F841E3431E000E79A0E /* NSDate.swift in Sources */,
+				19526F851E3431E000E79A0E /* URL.swift in Sources */,
+				19526F841E3431E000E79A0E /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +533,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -586,7 +586,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

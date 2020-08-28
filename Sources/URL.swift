@@ -1,5 +1,5 @@
 /*
-* NSURL
+* URL
 *
 * Created by Jeremy Fox on 3/1/16.
 * Copyright (c) 2016 Jeremy Fox. All rights reserved.
@@ -30,18 +30,14 @@ public extension URL {
     typealias Params = [String: AnyObject]
     
     func paramsDictonary() -> Params {
-        var params = Params()
-        if let urlParams = query {
-            let splitParams = urlParams.split { $0 == "&" }.map { String($0) }
-            for param in splitParams {
-                let paramKVP = param.split { $0 == "=" }.map { String($0) }
-                if paramKVP.count > 1 {
-                    params[paramKVP[0]] = paramKVP[1] as AnyObject?
-                }
-            }
-        }
-        
-        return params
+        return query?.split(separator: "&")
+            .map({ String($0) }) // ["key=value", "another_key=another_value", etc...]
+            .reduce(Params(), { (result, part) -> Params in
+                var result = result
+                let part = part.split(separator: "=").map({ String($0) }) // ["key", "value"]
+                result[part[0]] = part[1] as AnyObject
+                return result
+            }) ?? Params()
     }
     
 }

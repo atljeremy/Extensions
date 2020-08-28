@@ -1,5 +1,5 @@
 /*
-* NSDate
+* Date
 *
 * Created by Jeremy Fox on 3/1/16.
 * Copyright (c) 2016 Jeremy Fox. All rights reserved.

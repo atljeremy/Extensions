@@ -27,17 +27,7 @@ import UIKit
 private class DownloadQueue {
     
     fileprivate var queue = [String: Download]()
-
-    fileprivate class var _sharedQeueue: DownloadQueue {
-        struct Static {
-            static let instance = DownloadQueue()
-        }
-        return Static.instance
-    }
-    
-    class func sharedQeueue() -> DownloadQueue {
-        return _sharedQeueue
-    }
+    static let shared = DownloadQueue()
     
     func enqueue(_ download: Download, forImageURL imageURL: String) {
         queue[imageURL] = download
@@ -77,17 +67,17 @@ public extension UIImageView {
                     completion?()
                 }
             }
-            DownloadQueue.sharedQeueue().removeDownloadForImageURL(imageURL + "\(self.hash)")
+            DownloadQueue.shared.removeDownloadForImageURL(imageURL + "\(self.hash)")
         }) 
-        DownloadQueue.sharedQeueue().enqueue(Download(task: downloadTask), forImageURL: imageURL + "\(hash)")
+        DownloadQueue.shared.enqueue(Download(task: downloadTask), forImageURL: imageURL + "\(hash)")
         downloadTask.resume()
     }
     
     func cancelImageLoadForImageURL(_ imageURL: String) {
-        if let _download = DownloadQueue.sharedQeueue().downloadForImageURL(imageURL + "\(hash)") {
+        if let _download = DownloadQueue.shared.downloadForImageURL(imageURL + "\(hash)") {
             _download.task?.cancel()
         }
-        DownloadQueue.sharedQeueue().removeDownloadForImageURL(imageURL + "\(hash)")
+        DownloadQueue.shared.removeDownloadForImageURL(imageURL + "\(hash)")
     }
     
 }
