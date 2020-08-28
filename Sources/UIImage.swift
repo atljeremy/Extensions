@@ -27,7 +27,7 @@ import UIKit
 
 public extension UIImage {
     
-    func imageByScalingToSize(_ size: CGSize) -> UIImage {
+    @objc func imageByScalingToSize(_ size: CGSize) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -36,11 +36,11 @@ public extension UIImage {
         return image!
     }
     
-    func imageByScalingToHalfSize() -> UIImage {
+    @objc func imageByScalingToHalfSize() -> UIImage {
         return imageByScalingToSize(CGSize(width: size.width / 2, height: size.height / 2))
     }
     
-    func imageByCroppingToRect(rect: CGRect) -> UIImage? {
+    @objc func imageByCroppingToRect(rect: CGRect) -> UIImage? {
         guard let _cgImage = cgImage else {
             return nil
         }

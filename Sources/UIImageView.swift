@@ -50,11 +50,11 @@ private struct Download {
 
 public extension UIImageView {
     
-    func loadImageAtURL(_ imageURL: String, withDefaultImage defaultImage: UIImage?) {
+    @objc func loadImageAtURL(_ imageURL: String, withDefaultImage defaultImage: UIImage?) {
         loadImageAtURL(imageURL, withDefaultImage: defaultImage, completion: nil)
     }
     
-    func loadImageAtURL(_ imageURL: String, withDefaultImage defaultImage: UIImage?, completion: (() -> Void)?) {
+    @objc func loadImageAtURL(_ imageURL: String, withDefaultImage defaultImage: UIImage?, completion: (() -> Void)?) {
         if let _defaultImage = defaultImage {
             image = _defaultImage
         }
@@ -73,7 +73,7 @@ public extension UIImageView {
         downloadTask.resume()
     }
     
-    func cancelImageLoadForImageURL(_ imageURL: String) {
+    @objc func cancelImageLoadForImageURL(_ imageURL: String) {
         if let _download = DownloadQueue.shared.downloadForImageURL(imageURL + "\(hash)") {
             _download.task?.cancel()
         }
